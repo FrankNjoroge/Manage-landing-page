@@ -786,6 +786,15 @@ video {
   border-bottom-left-radius: 9999px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
+.border-brightRedLight {
+  --tw-border-opacity: 1;
+  border-color: hsl(12 88% 69% / var(--tw-border-opacity));
+}
+
 .bg-brightRed {
   --tw-bg-opacity: 1;
   background-color: hsl(12 88% 59% / var(--tw-bg-opacity));
@@ -1008,6 +1017,23 @@ body {
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+/* slider */
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 2px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: hsl(12, 88%, 59%);
 }
 
 .hover\:bg-brightRedLight:hover {
